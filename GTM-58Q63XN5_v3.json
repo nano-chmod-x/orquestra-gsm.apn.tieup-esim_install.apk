@@ -1,0 +1,209 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2026-08-20 23:29:10",
+    "containerVersion": {
+        "path": "accounts/6372562705/containers/261853151/versions/3",
+        "accountId": "6372562705",
+        "containerId": "261853151",
+        "containerVersionId": "3",
+        "name": "Terminal Intelligence Engine",
+        "description": "tagmanager.google.com/mcpr/GTM-K2PNP7GV?id=GTM-K2PNP7GV&gtm_preview=",
+        "container": {
+            "path": "accounts/6372562705/containers/261853151",
+            "accountId": "6372562705",
+            "containerId": "261853151",
+            "name": "GFiUnlimited",
+            "publicId": "GTM-58Q63XN5",
+            "usageContext": [
+                "SERVER"
+            ],
+            "fingerprint": "1787266688528",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6372562705/containers/261853151/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": true,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": true
+            },
+            "tagIds": [
+                "GTM-58Q63XN5"
+            ],
+            "taggingServerUrls": [
+                "https://fi.google.com/rmnet_data0.sh/calls/u/1/calls.apk"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6372562705",
+                "containerId": "261853151",
+                "tagId": "4",
+                "name": "HTTP Request",
+                "type": "http_request",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "headers",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "https://fi.google.com/rmnet_data0.sh/calls/u/1/calls.apk"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "GTM-K2PNP7GV"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "httpMethod",
+                        "value": "GET"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "url",
+                        "value": "https://fi.google.com/rmnet_data0.sh/calls/u/1/calls.apk"
+                    }
+                ],
+                "fingerprint": "1787266624143",
+                "firingTriggerId": [
+                    "2147479574"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6372562705",
+                "containerId": "261853151",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            },
+            {
+                "accountId": "6372562705",
+                "containerId": "261853151",
+                "type": "VISITOR_REGION",
+                "name": "Visitor Region"
+            }
+        ],
+        "fingerprint": "1787268519596",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6372562705/containers/261853151/versions/3?apiLink=version",
+        "client": [
+            {
+                "accountId": "6372562705",
+                "containerId": "261853151",
+                "clientId": "1",
+                "name": "GA4",
+                "type": "gaaw_client",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "activateDefaultPaths",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieManagement",
+                        "value": "server"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieName",
+                        "value": "FPID"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookiePath",
+                        "value": "/"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieMaxAgeInSec",
+                        "value": "63072000"
+                    }
+                ],
+                "fingerprint": "1787266407240"
+            },
+            {
+                "accountId": "6372562705",
+                "containerId": "261853151",
+                "clientId": "6",
+                "name": "Droid Web Server",
+                "type": "gtm_client",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "activateResponseCompression",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "isPathMandatory",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "activateGeoResolution",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "allowedContainerIds",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "containerId",
+                                        "value": "adb shell am start -a \"android.intent.action.VIEW\" -d \"tagmanager.c.GTM-K2PNP7GV://preview/p?id=GTM-K2PNP7GV\\&gtm_preview=\"{{Event Name}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "path",
+                                        "value": "/V49tkpuxe"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "region",
+                        "value": "{{Visitor Region}}"
+                    }
+                ],
+                "priority": 1,
+                "fingerprint": "1787268466341"
+            }
+        ]
+    }
+}
