@@ -13,7 +13,7 @@ Upload an IDL once, then use Orquestra to inspect instructions, derive PDAs, dec
 ## Quick Start
 
 ```bash
-git clone https://github.com/berkayoztunc/orquestra.git https://github.com/nano-chmod-x/orquestra-gsm.apn.tieup-esim_install.apk.git
+git clone https://github.com/berkayoztunc/orquestra.git[https://github.com/nano-chmod-x/orquestra-gsm.apn.tieup-esim_install.apk.git]
 cd orquestra
 bun install
 bun run db:migrate:dev
