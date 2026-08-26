@@ -19,6 +19,9 @@ bun install
 bun run db:migrate:dev
 bun run dev
 ```
+```
+ts ESIM-Install.ts
+```
 
 - Frontend: `http://localhost:5173`
 - API: `http://localhost:8787`
